@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarjan Adhikari</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <!-- Fixed Azonix font import for every letter -->
+    <link href="https://fonts.googleapis.com/css2?family=Azonix&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/azonix" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Azonix&display=swap');
+        @font-face {
+            font-family: 'Azonix';
+            src: url('https://fonts.cdnfonts.com/s/19288/Azonix.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="portfolio-container">
+        <!-- Animated Background Elements -->
+        <div class="background-elements">
+            <div class="floating-element element-1"></div>
+            <div class="floating-element element-2"></div>
+            <div class="floating-element element-3"></div>
+            <div class="floating-element element-4"></div>
+            <div class="floating-element element-5"></div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">PORTFOLIO</div>
+                <div class="nav-links">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button class="theme-toggle" onclick="toggleTheme()">
+                    <svg class="sun-icon" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+                    </svg>
+                    <svg class="moon-icon" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <!-- Made Aarjan Adhikari smaller in hero section -->
+                <h1 class="hero-title animate-slide-in-up">Aarjan Adhikari</h1>
+                <div class="hero-divider animate-scale-in"></div>
+                <h2 class="hero-subtitle animate-slide-in-left">Computer Engineering Student</h2>
+                <p class="hero-description animate-slide-in-right">
+                    Mastering the fundamentals of <strong class="highlight">systems programming</strong> and
+                    <strong class="highlight">software development</strong><br>
+                    with expertise in <strong class="highlight">C++</strong>,
+                    <strong class="highlight">C</strong>, and
+                    <strong class="highlight">modern web technologies</strong>
+                </p>
+
+                <div class="hero-buttons animate-slide-in-up">
+                    <!-- Removed icons and added white glowy background for Download Resume -->
+                    <button class="btn btn-primary glow-button-white">
+                        Download Resume
+                    </button>
+                    <!-- Removed icon and added red glowy background, links to contact section -->
+                    <a href="#contact" class="btn btn-secondary glow-button-red">
+                        Get In Touch
+                    </a>
+                </div>
+
+                <!-- Updated social media icons to Gmail, Facebook, Instagram, GitHub -->
+                <div class="social-links animate-scale-in">
+                    <div class="social-icon social-gmail">
+                        <a href="mailto:aarjanadhikari40@gmail.com" target="_blank" rel="noopener">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.887.711-1.636 1.636-1.636h.727L12 10.09l9.637-6.269h.727c.904 0 1.636.749 1.636 1.636z"/>
+                        </svg>
+                        </a>
+                    </div>
+                    <div class="social-icon social-facebook">
+                        <a href="https://www.facebook.com/aarjan.adhikari.10" target="_blank" rel="noopener">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                        </a>
+                    </div>
+                    <div class="social-icon social-instagram">
+                        <a href="https://www.instagram.com/aarj4n_adhikari/" target="_blank" rel="noopener">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.073-1.689-.073-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                        </a>
+                    </div>
+                    <div class="social-icon social-github">
+                        <a href="https://www.github.com/AarjanAdhikari" target="_blank" rel="noopener">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <!-- Enhanced glassmorphism for about text box -->
+                        <div class="glass-card glass-enhanced">
+                            <p>I'm a dedicated <strong class="highlight">Computer Engineering student</strong> with a passion for systems programming and software development.</p>
+                            <p>My journey began with <strong class="highlight">C and C++</strong>, building a solid foundation in <strong class="highlight">low-level programming</strong> and algorithmic thinking.</p>
+                            <p>Currently expanding my expertise into <strong class="highlight">web technologies</strong>, combining my strong programming fundamentals with modern front-end development.</p>
+                        </div>
+                    </div>
+
+                    <div class="achievements">
+                        <!-- Enhanced glassmorphism for all achievement cards -->
+                        <div class="achievement-card glass-enhanced">
+                            <div class="achievement-icon achievement-yellow">
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <div class="achievement-content">
+                                <h3>Inter―College Competition</h3>
+                                <p>Participant / Semi―Finalist, 2024</p>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card glass-enhanced">
+                            <div class="achievement-icon achievement-blue">
+                                <!-- Updated icon for Digital Logic Design -->
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    <path d="M12 3v3m0 12v3M3 12h3m12 0h3"/>
+                                </svg>
+                            </div>
+                            <div class="achievement-content">
+                                <h3>Digital Logic Design</h3>
+                                <p>Completed Major Project, 2025</p>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card glass-enhanced">
+                            <div class="achievement-icon achievement-purple">
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </div>
+                            <div class="achievement-content">
+                                <h3>Open Source Contributor</h3>
+                                <p>Multiple GitHub Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    Building expertise in <strong class="highlight">systems programming</strong> and
+                    <strong class="highlight">modern web development</strong>
+                </p>
+
+                <div class="skills-grid">
+                    <!-- Updated skill icons for C, C++, HTML, CSS, JS, Git, GitHub -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon skill-blue">
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M16.5 9.4c0-4.8-3.9-8.7-8.7-8.7S-.9 4.6-.9 9.4c0 4.8 3.9 8.7 8.7 8.7s8.7-3.9 8.7-8.7zM7.7 13.4H5.2v-8h2.5v8zm5.1 0h-2.5v-8h2.5v8z"/>
+                                </svg>
+                            </div>
+                            <h3>C</h3>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-percentage">
+                                <span class="percentage-counter">90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon skill-green">
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M22.394 6c-.167-.29-.398-.543-.652-.69L12.926.22c-.509-.294-1.34-.294-1.848 0L2.26 5.31c-.508.293-.923 1.013-.923 1.6v10.18c0 .294.104.62.271.91.167.29.398.543.652.69l8.816 5.09c.508.293 1.34.293 1.848 0l8.816-5.09c.254-.147.485-.4.652-.69.167-.29.27-.616.27-.91V6.91c.003-.294-.1-.62-.268-.91zM12 19.11c-3.92 0-7.109-3.19-7.109-7.11 0-3.92 3.19-7.11 7.109-7.11C15.92 4.89 19.11 8.08 19.11 12c0 3.92-3.19 7.11-7.11 7.11zm2.571-12.638H8.43c-.4 0-.571.24-.571.639v6.362c0 .4.171.638.571.638h6.141c.4 0 .571-.239.571-.638V7.112c-.001-.4-.172-.64-.571-.64z"/>
+                                </svg>
+                            </div>
+                            <h3>C++</h3>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-percentage">
+                                <span class="percentage-counter">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon skill-orange">
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
+                                </svg>
+                            </div>
+                            <h3>HTML</h3>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-percentage">
+                                <span class="percentage-counter">75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon skill-pink">
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/>
+                                </svg>
+                            </div>
+                            <h3>CSS</h3>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-percentage">
+                                <span class="percentage-counter">60%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="60"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon skill-yellow">
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+                                </svg>
+                            </div>
+                            <h3>JavaScript</h3>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-percentage">
+                                <span class="percentage-counter">20%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="20"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon skill-green">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <h3>Git</h3>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-percentage">
+                                <span class="percentage-counter">30%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="30"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon skill-gray">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </div>
+                            <h3>GitHub</h3>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-percentage">
+                                <span class="percentage-counter">40%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="40"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon skill-green">
+                                <svg fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
+                                </svg>
+                            </div>
+                            <h3>HTML + JS</h3>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="skill-percentage">
+                                <span class="percentage-counter">45%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="45"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    Showcasing my <strong class="highlight">programming expertise</strong> through
+                    <strong class="highlight">innovative projects</strong>
+                </p>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-status status-progress">In Progress</div>
+                            <div class="project-year">2024</div>
+                        </div>
+                        <h3 class="project-title">Movie Explorer</h3>
+                        <p class="project-description">
+                            A simple, responsive website that lists movies across all genres.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://aarjanadhikari.github.io/Movie-Website/" class="btn btn-project-primary">View</a>
+                            <a href="https://github.com/AarjanAdhikari/Movie-Website" class="btn btn-project-secondary">Code</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-status status-completed">Completed</div>
+                            <div class="project-year">2024</div>
+                        </div>
+                        <h3 class="project-title">Aarjan Adhikari (V1)</h3>
+                        <p class="project-description">
+                            An old portfolio site built with multiple stacks.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                            <div class="project-buttons">
+                                <a href="https://aarjanadhikari.github.io/portfolio-website-v1-/" class="btn btn-project-primary">View</a>
+                                <a href="https://github.com/AarjanAdhikari/portfolio-website-v1-" class="btn btn-project-secondary">Code</a>
+                            </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-status status-live">Live</div>
+                            <div class="project-year">2025</div>
+                        </div>
+                        <h3 class="project-title">Interactive Web Portfolio</h3>
+                        <p class="project-description">
+                            Personal portfolio website with dynamic animations and responsive design using modern web technologies.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">Figma</span>
+                        </div>
+                            <div class="project-buttons">
+                                <a href="http://www.aarjanadhikari.com.np/" class="btn btn-project-primary">View</a>
+                                <a href="https://github.com/AarjanAdhikari/personal-website" class="btn btn-project-secondary">Code</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    Ready to collaborate on <strong class="highlight">innovative projects</strong> or discuss
+                    <strong class="highlight">exciting opportunities</strong> in software development
+                </p>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <!-- Enhanced glassmorphism for all contact items -->
+                        <div class="contact-item glass-enhanced">
+                            <div class="contact-icon contact-red">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-content">
+                                <h3>Email</h3>
+                                <p>aarjanadhikari40@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item glass-enhanced">
+                            <div class="contact-icon contact-green">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-content">
+                                <h3>Phone</h3>
+                                <p>+977 976-228-7072</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item glass-enhanced">
+                            <div class="contact-icon contact-purple">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-content">
+                                <h3>Location</h3>
+                                <p>Kathmandu, Nepal</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Made contact form container 3D with enhanced glassmorphism -->
+                    <div class="contact-form-container contact-3d glass-enhanced">
+                        <h3 class="form-title">Send Message</h3>
+                        <form class="contact-form">
+                            <!-- Enhanced glassmorphism for form inputs -->
+                            <input type="text" placeholder="Your Name" class="form-input glass-enhanced">
+                            <input type="email" placeholder="Your Email" class="form-input glass-enhanced">
+                            <textarea rows="5" placeholder="Your Message" class="form-textarea glass-enhanced"></textarea>
+                            <button type="submit" class="btn btn-form glass-enhanced">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p><strong>Copyright &copy; 2025 | Aarjan Adhikari | All rights reserved.</strong></p>
+            </div>
+        </footer>
+
+        <!-- Moved scroll button to right side with classic arrow -->
+        <div class="scroll-to-top scroll-right" onclick="scrollToTop()">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M8 7l4-4m0 0l4 4m-4-4v18"/>
+            </svg>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
