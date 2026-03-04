@@ -28,4 +28,3 @@ The first version of my personal portfolio website, built to showcase my skills,
 
 ---
 
-## 📂 Project Structure
